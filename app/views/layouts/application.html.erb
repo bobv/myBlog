@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bob's Class Sked | <%= @title %></title>
+    <%= csrf_meta_tag %>
+	<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+    <%= render 'layouts/stylesheets' %>
+	<%= javascript_include_tag :defaults %> 
+  </head>
+  <body>
+      <%= @yield %>
+ </body>
+</html>
